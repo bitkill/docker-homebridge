@@ -1,1 +1,7 @@
 test-volume
+
+# IntelliJ Folder
+.idea
+
+# Enviroment file, may contain secrets
+.env
