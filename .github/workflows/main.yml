@@ -25,7 +25,7 @@ jobs:
             os: ubuntu-latest
             TARGET_IMAGE: bitkill/homebridge-bluetooth
             S6_ARCH: amd64
-            DOCKERFILE: Dockerfile.alpine.ubuntu
+            DOCKERFILE: Dockerfile.alpine
             AVAHI: "1"
             TAG_SUFFIX: ubuntu-amd64
             ALT_SUFFIX: debian-amd64
