@@ -31,6 +31,8 @@ RUN npm install -g --unsafe-perm homebridge@${HOMEBRIDGE_VERSION} \
 	homebridge-config-ui-x@${CONFIG_UI_VERSION} \
 	homebridge-mi-hygrothermograph@3.0.3
 
+RUN sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
+
 WORKDIR /homebridge
 VOLUME /homebridge
 
