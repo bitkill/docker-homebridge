@@ -3,7 +3,7 @@ FROM oznu/s6-node:14.15.1-ubuntu-${S6_ARCH:-amd64}
 
 RUN apt-get update \
   && apt-get install -y git python make g++ libnss-mdns avahi-discover libavahi-compat-libdnssd-dev \
-    net-tools iproute2 sudo nano vim \
+    bash net-tools iproute2 sudo nano vim \
     bluetooth bluez libbluetooth-dev libudev-dev \
   && apt-get clean \
   && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/* \
