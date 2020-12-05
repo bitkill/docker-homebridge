@@ -28,8 +28,7 @@ ENV HOMEBRIDGE_VERSION=1.2.3
 ENV CONFIG_UI_VERSION=4.35.0 HOMEBRIDGE_CONFIG_UI=0 HOMEBRIDGE_CONFIG_UI_PORT=8080
 
 RUN npm install -g --unsafe-perm homebridge@${HOMEBRIDGE_VERSION} \
-	homebridge-config-ui-x@${CONFIG_UI_VERSION} \
-	homebridge-mi-hygrothermograph@3.0.3
+	homebridge-config-ui-x@${CONFIG_UI_VERSION}
 
 RUN sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
 
